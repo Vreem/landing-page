@@ -1,4 +1,5 @@
 
+
 body {
     font-family:Arial, Helvetica, sans-serif
 }
@@ -73,6 +74,7 @@ img {
     border: 2px solid #3882f6;
     text-align: center;
     line-height: 200px;
+    background-color: grey;
 }
 
 button {
@@ -92,21 +94,86 @@ button {
     height: 100px;
 }
 
+#title {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#1f2937;
+    margin: 20px;
+}
+
+
 .box3 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 52px;
-}
-
-.title {
-    margin: 50px;
+    margin-bottom: 100px;
 }
 
 .text {
-    width:100px;
+    text-align: center;
 }
 
 .info {
-    max-width: 150px;
+    flex: 1;
+    max-width: 120px;
 }
+
+.imagebox {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #3882f6;
+    border-radius: 12px;
+}
+
+.box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    background-color: #e5e7eb;
+}
+
+.quote {
+    color:#1f2937;
+    font-size: 36px;
+    font-style: italic;
+    width: 650px;
+}
+/* here i think it clicks and i'm beginning to make use of descendants better */
+.box5 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #3882f6;
+    width: 900px;
+    border-radius: 8px;
+}
+
+#action {
+    color: white;
+    margin-left: 100px;
+}
+
+#pthor {
+    font-size: 14px;   
+}
+
+footer {
+    display:flex;
+    background-color: #1f2937;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
